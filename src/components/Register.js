@@ -1,10 +1,12 @@
 import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { dataBasket } from '..';
+import { useNavigate } from 'react-router-dom';
+import "./style.css";
 
 function RegisterForm() {
-  const { set } = useContext(dataBasket);
-
+  const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,12 +27,11 @@ function RegisterForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/register', formData);
+      const response = await axios.post('https://quiz-app-back-end-6ti7.onrender.com/register', formData);
       setMessage("Your data is saved successfully!");
       setTimeout(function() {
-        set("login");
+        navigate("/login")
       }, 2000);
-      // Optionally, reset the form after successful submission
       setFormData({
         name: '',
         email: '',

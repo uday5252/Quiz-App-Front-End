@@ -18,17 +18,28 @@ function Timer() {
     return () => clearInterval(intervalId);
   }, [seconds]);
 
-  // Convert remaining seconds to minutes and seconds
-  const minutes = Math.floor(seconds / 60);
+  useEffect(() => {
+    if (timerExpired) {
+      setTimeout(() => {
+        window.alert("Time's up! Please close this tab or window.");
+      }, 1000); // Delaying the alert to ensure it is displayed after the component renders
+    }
+  }, [timerExpired]);
+
+  // Calculate hours, minutes, and remaining seconds
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
   const remainingSeconds = seconds % 60;
 
   return (
     <div className="timer-container">
       <h3 className="timer-heading">Time Remaining:</h3>
       <div className="timer">
-        {minutes}:{remainingSeconds < 10 ? `0${remainingSeconds}` : remainingSeconds}
+        {hours < 10 ? '0' + hours : hours}:
+        {minutes < 10 ? '0' + minutes : minutes}:
+        {remainingSeconds < 10 ? '0' + remainingSeconds : remainingSeconds}
       </div>
-      {timerExpired && <p>Time's up!</p>}
+      {timerExpired && <p>Time's up! Please close this tab or window.</p>}
     </div>
   );
 }

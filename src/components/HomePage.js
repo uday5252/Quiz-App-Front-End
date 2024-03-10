@@ -6,6 +6,7 @@ import Register from './Register';
 import QuizPage from './QuizPage';
 import Question from './Question';
 import Result from './Result';
+import "./style.css"
 
 function HomePage(props) {
   // Define an array of motivational quotes
@@ -34,18 +35,12 @@ function HomePage(props) {
       padding: '20px'
     }}>
       <div style={{ color: 'rgba(0, 0, 0, 0.8)', fontFamily: 'Arial, sans-serif' }}>
-        <h1 style={{marginTop: -300, marginLeft: 100, color: 'darkblue', fontSize: '3em', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Welcome to My Quiz Application!</h1>
+        <h1 style={{marginTop: -300, marginLeft: 100, color: 'darkblue', fontSize: '3em', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Welcome to MERN Quiz!</h1>
         <p style={{ marginTop: 20, marginLeft: 100, color: 'darkblue', fontSize: '1.5em', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>{randomQuote}</p>
         <div style={{ marginTop: 20 }}>
-            {props.data ? "" : 
-                <>
-                   <Link to="/login" style={{ marginRight: 20, color: 'white', backgroundColor: 'darkblue', padding: '10px 20px', textDecoration: 'none', borderRadius: 5 }}>Login</Link>
-                   <Link to="/register" style={{ color: 'white', backgroundColor: 'darkblue', padding: '10px 20px', textDecoration: 'none', borderRadius: 5 }}>Register</Link>
- 
-                </>
-            }
+          <Link to="/login" style={{ marginRight: 20, color: 'white', backgroundColor: 'darkblue', padding: '10px 20px', textDecoration: 'none', borderRadius: 5 }}>Login</Link>
+          <Link to="/register" style={{ color: 'white', backgroundColor: 'darkblue', padding: '10px 20px', textDecoration: 'none', borderRadius: 5 }}>Register</Link>
         </div>
-
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { dataBasket } from "..";
 import "./style.css"; // Import the CSS file
-import "./style.css";
+
 import { useNavigate } from "react-router-dom";
 
 function QuizPage() {
