@@ -25,7 +25,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://quiz-app-back-end-6ti7.onrender.com/login', loginData);
+      const response = await axios.post('https://quiz-app-back-end-1.onrender.com/login', loginData);
       setUsername(response.data.user.name);
       setEmail(response.data.user.email);
       // Redirect to QuizPage upon successful login

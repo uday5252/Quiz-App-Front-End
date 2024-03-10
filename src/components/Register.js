@@ -6,7 +6,7 @@ import "./style.css";
 
 function RegisterForm() {
   const navigate = useNavigate();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -27,7 +27,7 @@ function RegisterForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://quiz-app-back-end-6ti7.onrender.com/register', formData);
+      const response = await axios.post('https://quiz-app-back-end-1.onrender.com/register', formData);
       setMessage("Your data is saved successfully!");
       setTimeout(function() {
         navigate("/login")

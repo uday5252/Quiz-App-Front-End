@@ -13,7 +13,7 @@ function Result() {
 
   useEffect(() => {
     // Send the score data to the Express route along with email
-    axios.post('http://localhost:8000/send-email', { username, score, email })
+    axios.post('https://quiz-app-back-end-1.onrender.com/send-email', { username, score, email })
       .then(response => {
         console.log(response.data);
         // After 5 seconds, navigate to the homepage
