@@ -1,0 +1,205 @@
+/* styles.css */
+
+/* App */
+.quiz-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .homepage {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.homepage h1 {
+  font-size: 24px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.homepage-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-button:hover {
+  background-color: #0056b3;
+}
+
+  /* Result */
+  .result {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .result-score {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .question-title {
+    margin-bottom: 20px;
+  }
+  
+  .answer-button, .next-button, .submit-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .next-button
+  {
+    background-color: rgb(0, 195, 255);
+  }
+
+  .submit-button
+  {
+    background-color: rgb(209, 106, 97);
+  }
+  
+  .answer-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .answer-button.selected {
+    background-color: #238d99;
+  }
+  
+  body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1664443577507-1930a78a60df?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    font-family: Arial, sans-serif; /* Optional: Set a default font-family */
+  }
+
+/* Register.css */
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.register-form {
+  width: 350px; /* Adjust width */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  margin: auto; /* Center horizontally */
+}
+
+.form-group {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px); /* Adjust width to accommodate padding */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#btn {
+  width: calc(100% - 20px); /* Adjust width to accommodate padding */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #0056b3;
+}
+
+/* style.css */
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-header {
+  color: #4c5eaf; /* Green color */
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.result-message {
+  font-size: 28px;
+}
+
+.score {
+  font-weight: bold;
+  color: #0c6b74; /* Orange color */
+  font-weight: 900;
+}
+
+/* Timer.jsx */
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.timer-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.timer {
+  font-size: 36px;
+  color: #007bff; /* Blue color */
+  font-weight: bold;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.timer p {
+  font-size: 18px;
+  color: red; /* Red color */
+  font-weight: bold;
+  margin-top: 10px;
+}
