@@ -1,20 +1,226 @@
 [
-      {
-        "title": "What does React primarily focus on?",
-        "A": "Backend development",
-        "B": "Frontend development",
-        "C": "Database management",
-        "D": "Networking",
-        "Answer": "B"
-      },
-      {
-        "title": "Which component in React is responsible for handling user events?",
-        "A": "State",
-        "B": "Props",
-        "C": "EventEmitter",
-        "D": "Virtual DOM",
-        "Answer": "A"
-      }
-    ]
-  
-  
+  {
+    "title": "What does the HTML <input> element represent?",
+    "A": "A section of navigation links",
+    "B": "A form control for user input",
+    "C": "A block of code",
+    "D": "An image",
+    "Answer": "B"
+  },
+  {
+    "title": "Which HTML element is used to create a hyperlink?",
+    "A": "<a>",
+    "B": "<link>",
+    "C": "<href>",
+    "D": "<url>",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the HTML <img> element represent?",
+    "A": "A paragraph of text",
+    "B": "A block of code",
+    "C": "An image",
+    "D": "A section of navigation links",
+    "Answer": "C"
+  },
+  {
+    "title": "Which HTML element is used to embed sound content in a document?",
+    "A": "<audio>",
+    "B": "<sound>",
+    "C": "<music>",
+    "D": "<media>",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the HTML <video> element represent?",
+    "A": "A form control for user input",
+    "B": "A section of navigation links",
+    "C": "A block of code",
+    "D": "A video or movie",
+    "Answer": "D"
+  },
+  {
+    "title": "Which HTML element is used to embed another document within the current HTML document?",
+    "A": "<frame>",
+    "B": "<embed>",
+    "C": "<iframe>",
+    "D": "<object>",
+    "Answer": "C"
+  },
+  {
+    "title": "What does the HTML <h1> element represent?",
+    "A": "A section of navigation links",
+    "B": "A block of code",
+    "C": "A heading",
+    "D": "An image",
+    "Answer": "C"
+  },
+  {
+    "title": "Which CSS selector targets elements that share a common parent?",
+    "A": "Child selector",
+    "B": "Descendant selector",
+    "C": "Sibling selector",
+    "D": "General sibling selector",
+    "Answer": "B"
+  },
+  {
+    "title": "What does the CSS selector 'div > p' target?",
+    "A": "All <div> elements",
+    "B": "All <p> elements inside <div> elements",
+    "C": "All <p> elements",
+    "D": "All <p> elements that are direct children of <div> elements",
+    "Answer": "D"
+  },
+  {
+    "title": "In CSS, what does the selector 'div > *' target?",
+    "A": "All <div> elements",
+    "B": "All elements inside <div> elements",
+    "C": "All elements that are direct children of <div> elements",
+    "D": "All elements",
+    "Answer": "C"
+  },
+  {
+    "title": "Which HTML element represents a self-contained composition in a document?",
+    "A": "<section>",
+    "B": "<article>",
+    "C": "<div>",
+    "D": "<span>",
+    "Answer": "B"
+  },
+  {
+    "title": "Which CSS selector targets an element by its ID?",
+    "A": "#id",
+    "B": ".class",
+    "C": "element",
+    "D": "*",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the CSS selector '.class' target?",
+    "A": "All elements with the specified class",
+    "B": "The first element of the specified class",
+    "C": "All elements with the specified ID",
+    "D": "The first element of the specified ID",
+    "Answer": "A"
+  },
+  {
+    "title": "In CSS, what does the selector 'div p' represent?",
+    "A": "All <div> elements",
+    "B": "All <p> elements inside <div> elements",
+    "C": "All <p> elements",
+    "D": "All <p> elements that are direct children of <div> elements",
+    "Answer": "B"
+  },
+  {
+    "title": "Which CSS selector targets all elements?",
+    "A": "*",
+    "B": "all",
+    "C": "element",
+    "D": "#id",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the CSS selector 'div + p' target?",
+    "A": "All <div> elements",
+    "B": "All <p> elements that come after <div> elements",
+    "C": "All <p> elements that come before <div> elements",
+    "D": "All <p> elements immediately preceded by <div> elements",
+    "Answer": "D"
+  },
+  {
+    "title": "In CSS, what does the selector 'a + p' represent?",
+    "A": "All <a> elements",
+    "B": "All <p> elements that come after <a> elements",
+    "C": "All <p> elements that come before <a> elements",
+    "D": "All <p> elements immediately preceded by <a> elements",
+    "Answer": "D"
+  },
+  {
+    "title": "Which CSS selector targets elements that are immediately preceded by a specified element?",
+    "A": "Child selector",
+    "B": "Adjacent sibling selector",
+    "C": "Descendant selector",
+    "D": "General sibling selector",
+    "Answer": "B"
+  },
+  {
+    "title": "What does the CSS selector 'h1 ~ p' target?",
+    "A": "All <h1> elements",
+    "B": "All <p> elements that share the same parent as <h1> elements",
+    "C": "All <p> elements inside <h1> elements",
+    "D": "All <p> elements that come after <h1> elements",
+    "Answer": "D"
+  },
+  {
+    "title": "Which HTML element is used to group and style block-level elements?",
+    "A": "<div>",
+    "B": "<span>",
+    "C": "<section>",
+    "D": "<article>",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the HTML element <nav> represent?",
+    "A": "A section of navigation links",
+    "B": "A paragraph of text",
+    "C": "A block of code",
+    "D": "An image",
+    "Answer": "A"
+  },
+  {
+    "title": "Which HTML element is used to define important text?",
+    "A": "<strong>",
+    "B": "<em>",
+    "C": "<i>",
+    "D": "<b>",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the HTML element <footer> typically contain?",
+    "A": "The main content of a webpage",
+    "B": "Contact information or copyright details",
+    "C": "A form for user input",
+    "D": "Navigation links",
+    "Answer": "B"
+  },
+  {
+    "title": "Which HTML element is used for grouping and styling inline elements?",
+    "A": "<div>",
+    "B": "<span>",
+    "C": "<section>",
+    "D": "<article>",
+    "Answer": "B"
+  },
+  {
+    "title": "What does the HTML element <aside> represent?",
+    "A": "A sidebar or tangentially related content",
+    "B": "A block of code",
+    "C": "An image",
+    "D": "A paragraph of text",
+    "Answer": "A"
+  },
+  {
+    "title": "What does the HTML element <article> represent?",
+    "A": "An independent piece of content",
+    "B": "A paragraph of text",
+    "C": "A block of code",
+    "D": "An image",
+    "Answer": "A"
+  },
+  {
+    "title": "Which HTML element is used for thematic grouping of content?",
+    "A": "<div>",
+    "B": "<section>",
+    "C": "<article>",
+    "D": "<aside>",
+    "Answer": "B"
+  },
+  {
+    "title": "What does the HTML element <header> typically contain?",
+    "A": "Main content of a webpage",
+    "B": "Navigation links or introductory content",
+    "C": "A form for user input",
+    "D": "Contact information or copyright details",
+    "Answer": "B"
+  }
+]
