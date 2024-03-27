@@ -25,9 +25,10 @@ function RegisterForm() {
   };
 
   const handleSubmit = async (e) => {
+    console.log("Welcome")
     e.preventDefault();
     try {
-      const response = await axios.post('https://quiz-app-back-end-1.onrender.com/register', formData);
+      const response = await axios.post('https://backend-quiz-app-u65j.onrender.com/register', formData);
       setMessage("Your data is saved successfully!");
       setTimeout(function() {
         navigate("/login")
@@ -47,7 +48,7 @@ function RegisterForm() {
     <div>
       <h3 style={{textAlign: "center", marginTop: "50px", color: "#333", fontFamily: "Arial, sans-serif", fontSize: "24px", textTransform: "uppercase", letterSpacing: "2px", paddingBottom: "10px"}}>Student Registration Form</h3>
       <div className="register-container">
-        <form className="register-form" onSubmit={handleSubmit}>
+        <form className="register-form" method='POST' onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Enter your full name" />
