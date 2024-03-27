@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css'; // Import the external CSS file
 
 function Timer() {
-  const [seconds, setSeconds] = useState(600); // 10 minutes in seconds
+  const [seconds, setSeconds] = useState(1800); // 10 minutes in seconds
   const [timerExpired, setTimerExpired] = useState(false);
 
   useEffect(() => {
