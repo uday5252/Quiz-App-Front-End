@@ -24,6 +24,10 @@ function Question() {
     setCurrentQuestionIndex(currentIndex => currentIndex + 1);
   }
 
+  function goToPreviousQuestion() {
+    setCurrentQuestionIndex(currentIndex => currentIndex - 1);
+  }
+
   function collectAnswer(answer) {
     const updatedAnswers = [...selectedAnswers];
     updatedAnswers[currentQuestionIndex] = answer;
@@ -53,15 +57,21 @@ function Question() {
           Question {currentQuestionIndex + 1}: {questions[currentQuestionIndex].title}
         </h3>
         <div>
-          {Object.keys(questions[currentQuestionIndex]).filter(key => key !== "title").map((choice, index) => (
-            <button
-              key={index}
-              className={`answer-button ${selectedAnswers[currentQuestionIndex] === choice ? "selected" : ""}`}
-              onClick={() => collectAnswer(choice)}
-            >
-              {questions[currentQuestionIndex][choice]}
-            </button>
-          ))}
+        {Object.keys(questions[currentQuestionIndex]).filter(key => key !== "title" && key !== "Answer").map((choice, index) => {
+            // Check if the current choice is the answer
+            const isAnswer = questions[currentQuestionIndex][choice] === questions[currentQuestionIndex].Answer;
+
+            return (
+              <button
+                key={index}
+                className={`answer-button ${selectedAnswers[currentQuestionIndex] === choice ? "selected" : ""}`}
+                onClick={() => collectAnswer(choice)}
+              >
+                {isAnswer && <span className="answer-marker">*</span>} {questions[currentQuestionIndex][choice]}
+              </button>
+            );
+          })}
+
           <div className="pagination">
             {Array.from({ length: questions.length }, (_, i) => (
               <button
@@ -73,6 +83,11 @@ function Question() {
               </button>
             ))}
           </div>
+          {currentQuestionIndex > 0 && (
+            <button className="previous-button" onClick={goToPreviousQuestion}>
+              Previous
+            </button>
+          )}
           {currentQuestionIndex === questions.length - 1 && allQuestionsAnswered ? (
             <button className="submit-button" onClick={goToResults}>
               Submit
