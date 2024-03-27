@@ -8,7 +8,7 @@ import Register from "./components/Register";
 import HomePage from "./components/HomePage";
 import { BrowserRouter as Router } from 'react-router-dom';
 import "./components/style.css";
-import Timer from "./components/Timer";
+
 
 export const dataBasket = createContext();
 
